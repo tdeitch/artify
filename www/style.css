@@ -10,10 +10,11 @@ header{
     font-size: 2em;
 }
 
-#left {
-    float: left;
-    width: 25%;
-    margin-right: 2%;
+#right {
+    float: right;
+    width: 75%;
+    margin-left: 2%;
+    clear: both;
 }
 
 /*
