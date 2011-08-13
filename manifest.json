@@ -1,18 +1,21 @@
 {
   "name": "Artify",
-  "version": "1.0",
-  "description": "An extension to replace the Google logo with a rotating piece of art from Artist A Day.",
-  "update_url": "http://artify.com/updates.xml",
+  "version": "1.1",
+  "description": "Replaces the Google logo with rotating art from artistaday.com",
+  "homepage_url": "http://tdeitch.com/artify/",
+  "update_url": "http://tdeitch.com/artify/updates.xml",
+  "icons": { "48": "icon48.png",
+          "128": "icon128.png" },
   "permissions": [
-    "https://encrypted.google.com/", "http://google.com/", "http://tdeitch.com/art", "tabs"
+    "https://encrypted.google.com/",
+    "http://google.com/",
+    "http://feeds.feedburner.com/ArtistADay-ArtSubmissionsAccepted"
   ],
   "minimum_chrome_version": "13",
   "content_scripts": [
     {
       "matches": ["https://encrypted.google.com/", "http://www.google.com/"],
-      "js": [
-        "logoreplace.js"
-      ],
+      "js": [ "logoreplace.js" ],
       "run_at": "document_start",
       "all_frames": true
     }
