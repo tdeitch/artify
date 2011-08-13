@@ -1,23 +1,29 @@
 {
-  "name": "Artify",
-  "version": "1.1",
-  "description": "Replaces the Google logo with rotating art from artistaday.com",
-  "homepage_url": "http://tdeitch.com/artify/",
-  "update_url": "http://tdeitch.com/artify/updates.xml",
-  "icons": { "48": "icon48.png",
-          "128": "icon128.png" },
-  "permissions": [
-    "https://encrypted.google.com/",
-    "http://google.com/",
-    "http://feeds.feedburner.com/ArtistADay-ArtSubmissionsAccepted"
-  ],
-  "minimum_chrome_version": "13",
-  "content_scripts": [
-    {
-      "matches": ["https://encrypted.google.com/", "http://www.google.com/"],
-      "js": [ "logoreplace.js" ],
-      "run_at": "document_start",
-      "all_frames": true
-    }
-  ]
+    "name": "Artify",
+    "version": "2",
+    "description": "Replaces the Google logo with rotating art from artistaday.com",
+    "homepage_url": "http://tdeitch.com/artify/",
+    "update_url": "http://tdeitch.com/artify/updates.xml",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "https://encrypted.google.com/",
+        "http://google.com/",
+        "http://feeds.feedburner.com/ArtistADay-ArtSubmissionsAccepted"
+    ],
+    "minimum_chrome_version": "13",
+    "content_scripts": [{
+        "matches": [
+            "https://encrypted.google.com/",
+            "http://www.google.com/"
+        ],
+        "js": [
+            "logoreplace.js"
+        ],
+        "run_at": "document_start",
+        "all_frames": true
+    }]
 }
