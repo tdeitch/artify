@@ -18,5 +18,4 @@ function replaceLogo() {
     // find the old logo and replace it with the new one
     var oldLogo = document.getElementById('lga');
     oldLogo.parentNode.replaceChild(newLogo, oldLogo);
-    // move the search form out of the art's way
 }
