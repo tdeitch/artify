@@ -1,9 +1,9 @@
 {
     "name": "Artify",
-    "version": "3",
+    "version": "4",
     "description": "Replaces the Google logo with rotating art from artistaday.com",
-    "homepage_url": "http://tdeitch.com/artify/",
-    "update_url": "http://tdeitch.com/artify/updates.xml",
+    "homepage_url": "http://tdeitch.github.com/artify/",
+    "update_url": "https://raw.github.com/tdeitch/artify/master/updates.xml",
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
