@@ -13,7 +13,7 @@ function replaceLogo() {
     // create a new logo div
     var newLogo = document.createElement('center');
     // insert the logo into the new div
-    newLogo.innerHTML = '<br><a href="http://www.artistaday.com"><img id="art" src="'+imgURL+'" height="231px" style="border: 8px solid #c4c8cc; -moz-border-radius: 15px; -webkit-border-radius: 15px;"></a><br>';
+    newLogo.innerHTML = '<br><a href="http://www.artistaday.com"><img id="art" src="'+imgURL+'" height="217px" style="border: 8px solid #c4c8cc; -moz-border-radius: 15px; -webkit-border-radius: 15px;"></a><br>';
     // find the old logo and replace it with the new one
     var oldLogo = document.getElementById('dhl');
     oldLogo.parentNode.replaceChild(newLogo, oldLogo);
