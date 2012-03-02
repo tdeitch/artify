@@ -10,7 +10,6 @@ body {
 h1 {
     font-family: 'Pompiere', cursive;
     font-size: 4em;
-    margin-bottom: 0;
 }
 #content {
     width: 1000px;
@@ -48,4 +47,8 @@ h1 {
 }
 .icon {
     vertical-align: middle;
+}
+.label {
+    vertical-align: middle;
+    padding-left: 10px;
 }
