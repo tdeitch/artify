@@ -8,13 +8,14 @@ req.send(null);
 
 function replaceLogo() {
     // use a regular expression to find the image URL
-    var imgPattern = new RegExp('img src="(http://www.aadstatic.com/uploads/[A-Za-z0-9\_]+\.jpg)"');
+    var imgPattern = new RegExp("img src='(http://www.aadstatic.com/uploads/[A-Za-z0-9\_]+\.jpg)'");
+    var text = req.responseText
     var imgURL = imgPattern.exec(req.responseText)[1];
     // create a new logo div
     var newLogo = document.createElement('div');    
     newLogo.id = 'lga';
     // insert the logo into the new div
-    newLogo.innerHTML = '<a href="http://www.artistaday.com"><img id="art" src="'+imgURL+'" height="217px" style="border: 8px solid #c4c8cc; -moz-border-radius: 15px; -webkit-border-radius: 15px;"></a>';
+    newLogo.innerHTML = '<a href="http://www.artistaday.com"><img id="art" src="'+imgURL+'" height="190px" style="border: 8px solid #c4c8cc; -moz-border-radius: 15px; -webkit-border-radius: 15px;"></a>';
     // find the old logo and replace it with the new one
     var oldLogo = document.getElementById('lga');
     oldLogo.parentNode.replaceChild(newLogo, oldLogo);

@@ -1,8 +1,8 @@
 {
     "name": "Artify",
-    "version": "6",
+    "version": "7",
     "description": "Replaces the Google logo with rotating art from artistaday.com",
-    "homepage_url": "http://tdeitch.github.com/artify/",
+    "homepage_url": "http://www.getartify.net/",
     "update_url": "https://raw.github.com/tdeitch/artify/master/updates.xml",
     "icons": {
         "16": "icon16.png",
@@ -11,6 +11,7 @@
     },
     "permissions": [
         "https://encrypted.google.com/",
+        "https://www.google.com/",
         "http://www.google.com/",
         "http://www.google.cat/",
         "http://www.google.ad/",
@@ -196,14 +197,13 @@
         "http://www.google.co.za/",
         "http://www.google.co.zm/",
         "http://www.google.co.zw/",
-        "https://duckduckgo.com/",
-        "http://duckduckgo.com/",
         "http://feeds.feedburner.com/ArtistADay-ArtSubmissionsAccepted"
     ],
     "minimum_chrome_version": "13",
     "content_scripts": [{
         "matches": [
             "https://encrypted.google.com/",
+            "https://www.google.com/",
             "http://www.google.com/",
             "http://www.google.cat/",
             "http://www.google.ad/",
@@ -395,19 +395,5 @@
         ],
         "run_at": "document_start",
         "all_frames": true
-    },
-    {
-        "matches": [
-            "https://www.duckduckgo.com/",
-            "https://duckduckgo.com/",
-            "http://www.duckduckgo.com/",
-            "http://duckduckgo.com/"
-        ],
-        "js": [
-            "duckduckgo.js"
-        ],
-        "run_at": "document_start",
-        "all_frames": true
-
     }]
 }
